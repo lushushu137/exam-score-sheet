@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Exam Score Sheet
+## 🪄 How to start
+1. It is deployed on Github Page: https://lushushu137.github.io/exam-score-sheet. Click to see.
+2. Or, download the repository, run the following code.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+npm install
+npm run start
+```
+## 🌟 Features
+- Basic data fetching (mock) and displaying ✔
+  - I mocked the http request by ```Promise + setTimeout```.
+  - I used ```sessionStorage``` to store data.
+- Creating, deleting, filtering data records ✔
+  - All data manipulation are in the mock backend. I implemented creating, deleting, and filtering the data in the ```api.js``` file. 
+  - The table doesn't maintain any filter state. It is only responsible for displaying data.  
+- Responsive on mobile device ✔
+  - I took use of the default breakpoints defined by Material UI. I used two of them, which are ```xs``` and ```sm```. One for mobile devices, one for PC. 
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🫡 Built with
+- create-react-app
+  - Since there is no backend server for this project, the client side rendering is enough.
+- Material UI
+  - I used components from Material to make it good-looking.
+- Formik & Yup
+  - I used Formik and Yup to handle form state and validation.
+- material-table
+  - I chose this package to enhance the default Table component of Material. It has good support for inline actions and localization (Although I haven't done localization). 
+- uuid
+  - I used this tool to generate unique ID for each data record.
+## 🤔 Have to admit
+- Tried best to make UI good-looking
+- Need more time to localize
+- No time for unit test
